@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slide from "react-reveal";
 
+
 class Resume extends Component {
   getRandomColor() {
     let letters = "0123456789ABCDEF";
@@ -54,23 +55,32 @@ class Resume extends Component {
       );
     });
 
+    const tools = this.props.data.tools.map(function (tools) {
+      return (
+        <div key={tools.name}>
+          <p>{tools.name}</p>
+        </div>
+      );
+    });
+
+    // const tools = this.props.data.tools.map((tools) => {
+    //   const backgroundColor = this.getRandomColor();
+    //   const className = "bar-expand " + tools.name.toLowerCase();
+
+
+    //   return (
+    //     <li key={tools.name}>
+    //       <span  className={className}></span>
+    //       <em>{tools.name}</em>
+    //     </li>
+    //   );
+    // });
+
+
+
     return (
       <section id="resume">
-        <Slide left duration={1300}>
-          <div className="row education">
-            <div className="three columns header-col">
-              <h1>
-                <span>Education</span>
-              </h1>
-            </div>
 
-            <div className="nine columns main-col">
-              <div className="row item">
-                <div className="twelve columns">{education}</div>
-              </div>
-            </div>
-          </div>
-        </Slide>
 
         <Slide left duration={1300}>
           <div className="row work">
@@ -100,8 +110,53 @@ class Resume extends Component {
               </div>
             </div>
           </div>
+
         </Slide>
-      </section>
+
+        <Slide left duration={1300}>
+          <div className="row skill">
+            <div className="three columns header-col">
+              <h1>
+                <span>Tools</span>
+              </h1>
+            </div>
+
+            {/* <div className="nine columns main-col">
+            <div>
+              <ToolList tools={this.props.data.tools} />
+              <div className="twelve columns">{education}</div>
+            </div>
+          </div> */}
+            <div className="nine columns main-col">
+              <div className="row item">
+                <div className="twelve columns">{tools}</div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </Slide>
+
+
+        <Slide left duration={1300}>
+          <div className="row education">
+            <div className="three columns header-col">
+              <h1>
+                <span>Education</span>
+              </h1>
+            </div>
+
+            <div className="nine columns main-col">
+              <div className="row item">
+                <div className="twelve columns">{education}</div>
+              </div>
+            </div>
+
+          </div>
+        </Slide>
+
+      </section >
     );
   }
 }

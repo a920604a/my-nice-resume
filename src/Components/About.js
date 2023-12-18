@@ -10,6 +10,7 @@ class About extends Component {
     const bio = this.props.data.bio;
     const street = this.props.data.address.street;
     const city = this.props.data.address.city;
+    const country = this.props.data.address.country;
     const state = this.props.data.address.state;
     const zip = this.props.data.address.zip;
     const phone = this.props.data.phone;
@@ -24,7 +25,7 @@ class About extends Component {
               <img
                 className="profile-pic"
                 src={profilepic}
-                alt="Nordic Giant Profile Pic"
+                alt="YU-AN, CHEN Profile Pic"
               />
             </div>
             <div className="nine columns main-col">
@@ -40,7 +41,7 @@ class About extends Component {
                     <span>
                       {street}
                       <br />
-                      {city} {state}, {zip}
+                      {country}, {city} {state}, {zip}
                     </span>
                     <br />
                     <span>{phone}</span>

@@ -11,6 +11,18 @@ class Header extends Component {
     const name = this.props.data.name;
     const description = this.props.data.description;
 
+
+    const networks = this.props.data.social.map(function (network) {
+      return (
+        <li key={network.name}>
+          <a href={network.url}>
+            <i  className={network.className}></i>
+          </a>
+        </li>
+      );
+    });
+
+
     return (
       <header id="home">
         <ParticlesBg type="circle" bg={true} />
@@ -23,7 +35,8 @@ class Header extends Component {
             Hide navigation
           </a>
 
-          <ul id="nav" className="nav">
+          <ul id="nav" className="social-links">
+          {networks}
             <li className="current">
               <a className="smoothscroll" href="#home">
                 Home
@@ -67,9 +80,9 @@ class Header extends Component {
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href={project} className="button btn project-btn">
+                {/* <a href={project} className="button btn project-btn">
                   <i className="fa fa-book"></i>Project
-                </a>
+                </a> */}
                 <a href={github} className="button btn github-btn">
                   <i className="fa fa-github"></i>Github
                 </a>
