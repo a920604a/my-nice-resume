@@ -36,26 +36,13 @@ class Portfolio extends Component {
 
               <div
                 id="portfolio-wrapper"
-                className="bgrid-quarters s-bgrid-thirds cf"
+                className="bgrid-half s-bgrid-half cf"
               >
                 {projects}
               </div>
             </div>
           </div>
         </Fade>
-{/* 
-        <Slide left duration={1300}>
-          <div className="row project">
-            <div className="three columns header-col">
-              <h1>
-                <span>projects</span>
-              </h1>
-            </div>
-
-            <div className="nine columns main-col">{projects}</div>
-          </div>
-        </Slide> */}
-
 
       </section>
     );
