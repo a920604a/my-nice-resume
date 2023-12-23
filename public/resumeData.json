@@ -66,7 +66,7 @@
       },
       {
         "company":"Asus Inc. AICS department",
-        "title":"Data Engineer",
+        "title":"System Engineer",
         "years":"November 2021 - Feburary 2022",
         "description":"Maintain ETL pipelines by Airflow that would do the daily sync millions of records from/to different types of dataset."
       },
@@ -114,8 +114,20 @@
   "portfolio":{
     "projects": [
       {
-        "title":"AMD",
-        "category":"My Travel Blog for my post-university travels",
+        "title":"Age-related Macular Degeneration Rehabilitation Platform",
+        "category":"Successfully developed and integrated a comprehensive medical management platform with multiple technologies, including Unity, SQL, C# and Eye Tracking technology.",
+        "image":"01.jpg",
+        "url":"https://www.canadianwanderlust.com"
+      },
+      {
+        "title":"Remote meeting prototype",
+        "category":"Use Photon and C# to jointly develop a remote video conference prototype",
+        "image":"01.jpg",
+        "url":"https://www.canadianwanderlust.com"
+      },
+      {
+        "title":"Misc",
+        "category":"Build meeting room system so that connect from remote user.",
         "image":"01.jpg",
         "url":"https://www.canadianwanderlust.com"
       }
