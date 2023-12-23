@@ -3,7 +3,7 @@
     "name":"Yu-An, Chen Resume",
     "description":"I am a software engineer",
     "image":"profilepic.jpeg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"有著多年的系統整合經驗，整合機器學習演算法與開發過後端，已經幫助許多專案的達成。",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "a920604a@gmail.com",
     "//phone": "0961220102",
@@ -22,36 +22,36 @@
       {
         "name":"facebook",
         "url":"https://www.facebook.com/yu.an.1800?locale=zh_TW",
-        "className":"fa fa-facebook"
+        "className":"fa fa-facebook fa-2x"
       },
       {
         "name":"linkedin",
         "url":"https://www.linkedin.com/in/chen-yuan-2b4b7212b/",
-        "className":"fa fa-linkedin"
+        "className":"fa fa-linkedin fa-2x"
       },
       {
         "name":"instagram",
         "url":"https://www.instagram.com/yuan3509/",
-        "className":"fa fa-instagram"
+        "className":"fa fa-instagram fa-2x"
       },
       {
         "name":"github",
         "url":"https://github.com/a920604a",
-        "className":"fa fa-github"
+        "className":"fa fa-github fa-2x"
       }
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "\\skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":" National Central University",
+        "school":"National Central University",
         "degree":"Masters in Computer science",
         "graduated":"July 2018",
         "//description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
       },
       {
-        "school":" National Central University",
+        "school":"National Central University ",
         "degree":"Bachelor in Mathematics, minor in computer",
         "graduated":"June 2016",
         "//description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
@@ -62,25 +62,40 @@
         "company":"Oomii Inc.",
         "title":"Software Engineer",
         "years":"March 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":[
+            "使用Unity框架、C#進行後端開發",
+            "使用Ansible自動化部署至其他環境",
+            "使用Figma工具與進行UI/UX設計密切合作",
+            "協助部署遠端會議原型",
+            "在面試過程中協助評估候選人的技術能力",
+            "建立會議室系統，以便遠端使用者連接"
+        ]
       },
       {
         "company":"Asus Inc. AICS department",
         "title":"System Engineer",
         "years":"November 2021 - Feburary 2022",
-        "description":"Maintain ETL pipelines by Airflow that would do the daily sync millions of records from/to different types of dataset."
+        "description":[
+          "負責維護ETL流程，使用Airflow進行每日數百萬條記錄的同步，涉及不同類型的數據集。這項經驗不僅強化了我的Airflow技能，還培養了我在大規模數據同步和ETL管理方面的專業能力。"
+        ]
       },
       {
         "company":"安智聯科技有限公司",
         "title":"Algorithm Development Engineer",
         "years":"April 2020 - March 2021",
-        "description":"Implement advanced object detection and image classification algorithms, collaborate with cross-functional teams to meet customer needs, develop solid web backends for seamless AI integration, and continue to follow AI integration and web development trends to enhance solutions."
+        "description":[
+            "整合物件檢測和影像分類演算法，以滿足需求。",
+            "積極與團隊合作，負責建立高效且可擴展的 Flask 網站後端。",
+            "整合 MySQL 作為數據庫，利用 Docker Compose 實現容器化部署。"
+        ]
       },
       {
         "company":"FOXCONN",
         "title":"Software Engineer intern",
         "years":"July 2018 - October 2018",
-        "description":"Conducted thorough research on machine learning techniques, exploring and implementing cutting-edge models."
+        "description":[
+          "應用了Python編程語言，使用了TensorFlow和Keras框架，成功開發了深度學習演算法，提高了檢測系統的效能並取得了顯著的成就。"
+        ]
       }
     ],
     "skills":[
@@ -115,22 +130,56 @@
     "projects": [
       {
         "title":"Age-related Macular Degeneration Rehabilitation Platform",
-        "category":"Successfully developed and integrated a comprehensive medical management platform with multiple technologies, including Unity, SQL, C# and Eye Tracking technology.",
-        "image":"01.jpg",
+        "category":"打造復健平台整合瞳孔追蹤技術",
+        "description":
+        [
+          "為了幫助黃斑部病變病患訓練第二視野中心。",
+          "被分配實做出一個復健平台，並整合同事的eye tracking 演算法。",
+          "使用Unity 實作外觀 layout、SQLite 作為存儲系統、搭配System service以實現特定功能。",
+          "復健平台不僅僅是一個工具，更是一個能夠為醫療團隊提供更便捷工作流程的創新解決方案。"
+        ],
+        "image":"amd_flow_chart.png",
         "url":"https://www.canadianwanderlust.com"
       },
       {
         "title":"Remote meeting prototype",
-        "category":"Use Photon and C# to jointly develop a remote video conference prototype",
-        "image":"01.jpg",
+        "category":"提升遠端會議多元體驗",
+        "description":
+        [
+          "在協助遠端會議系統的專案中，我承擔了提升使用者體驗的使命。",
+          "面對不同語系的使用者可能面臨的語言溝通障礙，我與其他軟體工程師、UI/UX設計師合作，著手增加語音翻譯和即時字幕功能。",
+          "這項任務的動機來自於希望克服語言障礙，讓所有使用者都能流暢參與會議，理解其他語言的內容。透過這項改進，成功地使遠端會議系統更加多元且包容，為使用者提供更豐富、更無障礙的會議體驗。"
+        ],
+        "image":"rm2.png",
         "url":"https://www.canadianwanderlust.com"
       },
       {
-        "title":"Misc",
-        "category":"Build meeting room system so that connect from remote user.",
-        "image":"01.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title": "Misc",
+        "category": "會議室升級支援遠端視訊會議",
+        "description":
+        [
+          "在前一份職位中，我面臨了一項挑戰：主管常常在國外，需要每週進行會議。",
+          "為了確保他能夠參與，我被指派負責升級會議室，使其能夠支援遠端視訊會議。我的任務包括選擇並整合螢幕和揚聲器，以及整合現有主機與投影機。",
+          "為了達到最佳效果，我撰寫了udev規則，觸發自定義的服務，以更好的顯示於投影幕上。整合過程中，我特別關注了udev規則的撰寫，以確保各種解析度的自動最佳化。",
+          "結果，我們成功地將會議系統升級，為主管提供了便捷的視訊參與方式，同時也展現了整合軟硬體和解決問題的能力。"
+        ],        
+        "image": "meeting_room.png",
+        "url": "https://www.canadianwanderlust.com"
+      },
+      {
+        "title": "智能缺陷檢測平台",
+        "category": "開發自動缺陷分類平台",
+        "description":
+        [
+          "在這個專案中，整合物件檢測和影像分類演算法，以滿足需求。",
+          "積極與團隊合作，負責建立高效且可擴展的Flask框架後端，整合MySQL作為數據庫，利用docker compose實現容器化部署。",
+          "透過asyncio異步編程縮短前端回應時間，提升系統即時性。同時，利用multi-process和多GPU訓練策略，成功縮短訓練時間至原先的3/4，提高效率確保系統順暢運作。",
+          "這些優化措施使我們成功實現客戶需求，提供高品質解決方案。"
+        ],
+        "image": "aie_adc_train.png",
+        "url": "https://www.canadianwanderlust.com"
       }
     ]
   }
+  
 }

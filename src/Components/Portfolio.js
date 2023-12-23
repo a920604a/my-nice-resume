@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import Zmage from "react-zmage";
-import Fade from "react-reveal";
-
+import { Fade, Slide } from "react-reveal";
 let id = 0;
 class Portfolio extends Component {
   render() {
@@ -13,8 +12,13 @@ class Portfolio extends Component {
       return (
         <div key={id++} className="columns portfolio-item">
           <div className="item-wrap">
-            <Zmage alt={projects.title} src={projectImage} />
             <div style={{ textAlign: "center" }}>{projects.title}</div>
+            <ol>
+              {projects.description.map((desc, index) => (
+                <li key={index}>{desc}</li>
+              ))}
+            </ol>
+            <Zmage alt={projects.title} src={projectImage} />
           </div>
         </div>
       );
@@ -22,10 +26,13 @@ class Portfolio extends Component {
 
     return (
       <section id="portfolio">
-        <Fade left duration={1000} distance="40px">
-          <div className="row">
+
+        <Fade left big duration={1000} distance="40px">
+          <div className="row project">
+            <h1>
+              <span>project</span>
+            </h1>
             <div className="twelve columns collapsed">
-              <h1>Check Out Some of My Works.</h1>
 
               <div
                 id="portfolio-wrapper"
@@ -36,6 +43,20 @@ class Portfolio extends Component {
             </div>
           </div>
         </Fade>
+{/* 
+        <Slide left duration={1300}>
+          <div className="row project">
+            <div className="three columns header-col">
+              <h1>
+                <span>projects</span>
+              </h1>
+            </div>
+
+            <div className="nine columns main-col">{projects}</div>
+          </div>
+        </Slide> */}
+
+
       </section>
     );
   }
